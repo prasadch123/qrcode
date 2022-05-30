@@ -1,0 +1,26 @@
+{% load static %}
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QR_Code</title>
+<link rel="stylesheet" type="text/css" href="{% static 'css/page.css'%}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Image and text -->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="{% static 'images/titlelogo.jpg'%}" width="1500" height="100" class="d-inline-block align-top" alt="">
+  </a>
+</nav>
+
+<div class="btn-group" style="margin-left: 550px;margin-top:100px;">
+
+  <button><a href="{% url 'login' %}"  style="color:white">Teacher</a></button>
+  
+  <button><a href="{% url 'admin_login' %}" style="color:white">HOD</a></button>
+</div>
+</body>
+</html>

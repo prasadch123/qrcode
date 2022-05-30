@@ -1,0 +1,33 @@
+{% load static %}
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>QR Code</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="{% static 'css/login.css'%}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="login-form-wrap">
+  <h2>Login</h2>
+  <form id="login-form" method="POST" actiion="/admin_login/">
+      {% csrf_token %}
+    <p>
+    <input type="text" id="username" name="username" placeholder="Username" required><i class="validation"><span></span><span></span></i>
+    </p>
+    <p>
+    <input type="password" id="email" name="password" placeholder="Password" required style="font-size:16px;padding-left:9px;"><i class="validation"><span></span><span></span></i>
+    </p>
+    <p>
+    <input type="submit" id="login" value="Login"></a> 
+    </p>
+  </form>
+  <br>
+  <br>
+  <!--create-account-wrap-->
+</div><!--login-form-wrap-->
+<!-- partial -->
+  
+</body>
+</html>

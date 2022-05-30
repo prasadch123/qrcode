@@ -1,0 +1,35 @@
+.btn-group button {
+  background-color: #04AA6D; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: #fff; /* White text */
+  padding: 25px 95px; /* Some padding */
+  font-size: 24px;
+  box-shadow: 0 5px #999;
+  outline: none;
+  cursor: pointer; /* Pointer/hand icon */
+  float: left;/* Float the buttons side by side */
+  margin-top: 23%;
+  margin-bottom: 27%;
+  margin-left: 50%;
+  border-radius: 15px;
+}
+button a 
+{
+  text-decoration: none;
+}
+
+  .centered {
+  position: absolute;
+  top: 60%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 25px;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: yellow;
+
+}
+
+ 
+

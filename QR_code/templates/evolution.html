@@ -1,0 +1,44 @@
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QR_Code</title>
+    <link rel="stylesheet" type="text/css" href="{% static "css/iframe.css" %}">
+</head>
+<body>
+
+
+<div> 
+    <center><h1>Welcome to Exam Evalution Page</h1></center>
+    <a href="{% url 'logout' %}" type="button">Logout</a>
+    <br>
+    <br>
+    
+    <div class="projects-wrapper">
+
+    <div class="proj-box-format">
+        <iframe id="scaled-frame"  src="{% static "images/question.pdf" %}" frameborder="0" scrolling="width" webkitallowfullscreen mozallowfullscreen allowfullscreen align="middle" seamless></iframe>
+    </div>
+    <div class="proj-box-format">
+        <iframe src="{% static "images/key1.jpg" %}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen align="right" seamless></iframe>
+    </div>
+    <br>
+    <br>
+</div>
+
+</div>  
+<div>
+<form method="post" action="/studentdata/">
+  {% csrf_token %}
+    <label> Enter student name: </label><br><br>
+    <input type="text" id="username" style="margin-left:10px;" name="username" placeholder="Enter student name " required></span>
+    <br><br>
+    <label> Enter student marks: </label><br><br>
+    <input type="text" id="username" style="margin-left:10px;" name="marks" placeholder="Enter Marks here" required></span><br><br>
+
+    <input type = "submit" value = " Enter " style= "background:green;border-radius:none;"> 
+</form>
+</div 
+</body>
+</html>
